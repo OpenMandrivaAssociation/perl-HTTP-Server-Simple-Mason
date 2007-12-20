@@ -8,6 +8,7 @@ Group:		Development/Perl
 Summary:        Module for an abstract baseclass for a standalone mason server
 Source0:        http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/%{realname}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel 
 BuildRequires:  perl-HTML-Mason 
 BuildRequires:  perl-libwww-perl 
