@@ -1,8 +1,8 @@
 %define realname   HTTP-Server-Simple-Mason
 
 Name:		perl-%{realname}
-Version:        0.09
-Release:        %mkrel 8
+Version:        0.11
+Release:        %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:        Module for an abstract baseclass for a standalone mason server
