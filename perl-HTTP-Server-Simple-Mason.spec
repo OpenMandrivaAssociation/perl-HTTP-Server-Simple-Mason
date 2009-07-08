@@ -1,7 +1,7 @@
 %define realname   HTTP-Server-Simple-Mason
 
 Name:		perl-%{realname}
-Version:        0.11
+Version:        0.12
 Release:        %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
