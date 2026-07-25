@@ -2,13 +2,13 @@
 %define upstream_version 0.14
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Module for an abstract baseclass for a standalone mason server
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://metacpan.org/dist/HTTP-Server-Simple-Mason
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	make
