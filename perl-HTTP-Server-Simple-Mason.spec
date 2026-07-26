@@ -1,15 +1,13 @@
 %define upstream_name    HTTP-Server-Simple-Mason
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.14
+Release:	6
 
 Summary:	Module for an abstract baseclass for a standalone mason server
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/HTTP-Server-Simple-Mason
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ Perl module that contains a abstract baseclass for a standalone mason server.
 This is based on HTTP::Server::Simple.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -54,9 +52,7 @@ rm -rf %{buildroot}%{perl_vendorarch}
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.120.0-1mdv2010.0
 + Revision: 406065
-- rebuild using %%perl_convert_version
-
-* Wed Jul 08 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.12-1mdv2010.0
+- rebuild using %0.14 Wed Jul 08 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.12-1mdv2010.0
 + Revision: 393524
 - update to new version 0.12
 
